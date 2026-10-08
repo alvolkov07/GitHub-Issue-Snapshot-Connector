@@ -89,14 +89,7 @@ python3 cli.py import octocat/hello-world
 {
   "ok": true,
   "repository": "octocat/hello-world",
-  "count": 90,
-  "issues":[
-    {
-      "number": 11353,
-      "title": "Test Issue 1790833325",
-      "url": "https://github.com/octocat/Hello-World/issues/11353"
-    }
-  ]
+  "count": 90
 }
 ```
 
@@ -109,14 +102,19 @@ Note that this will print out a list every issue in the database, but single exa
 ```
 python3 cli.py read octocat/hello-world
 
-...
 {
-      "number": 11468,
-      "title": "Creating issue with GraphQL",
-      "url": "https://github.com/octocat/Hello-World/issues/11468"
+  "ok": true,
+  "repository": "octocat/hello-world",
+  "count": 90,
+  "issues":[
+    {
+      "number": 11353,
+      "title": "Test Issue 1790833325",
+      "url": "https://github.com/octocat/Hello-World/issues/11353"
+    }
+    ...
+  ]
 }
-
-...
 ```
 
 **Error case**
