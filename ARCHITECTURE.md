@@ -30,7 +30,7 @@ parse_repo -> SELECT from SQLite -> result dict (no GitHub call).
 
 ## Database schema
 Imported issues are stored in a database capturing the data of the issue's repository name, number, title, and url. The primary key uses (repository, number) because the same issue numbers could exist in two different repositories. 
-
+```
 CREATE TABLE IF NOT EXISTS issues (
     repository TEXT    NOT NULL,
     number     INTEGER NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS issues (
     url        TEXT    NOT NULL,
     PRIMARY KEY (repository, number)
 );
-
+```
 
 ## Configuration
 - Database path: the db_path argument (CLI: --db). Default issues.db, or the GITHUB_ISSUES_DB environment variable. Empty/invalid database paths will result in a database_error.
