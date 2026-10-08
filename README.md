@@ -137,14 +137,14 @@ python3 cli.py import octocat/this-is-a-fake-repo-test
 
 My primary AI agent of choice was Claude, which I used to research about how to create SQLite database schemas, isolate the important sections I needed to read from GitHub's REST API and generate randomized an in-depth test class. Additionally, I used it in my code to assist with debugging hidden edge cases related to API calling and assertion misreadings, explaining the methodology behind designing core functions (like import and read) in connector.py, breaking down several problems into smaller subtasks, and formatting explicit error messages for executable and API error handling. 
 
-Additionally, I Used: 
+Additionally, I used: 
 
-| Python 3 | Programming language of use |
-| SQLite (`sqlite3`) | For database schema, querying and reading the stored issues without calling GitHub again |
-| GitHub REST API | For getting public repository issue data |
-| Git and GitHub | For version control and uploading code |
-| VS Code/Terminal | Running and viewing application tests and live calls |
-| QuickTime | For the screen recording |
+- | Python 3 | Programming language of use |
+- | SQLite (`sqlite3`) | For database schema, querying and reading the stored issues without calling GitHub again |
+- | GitHub REST API | For getting public repository issue data |
+- | Git and GitHub | For version control and uploading code |
+- | VS Code/Terminal | Running and viewing application tests and live calls |
+- | QuickTime | For the screen recording |
 
 
 ## One unfamiliar problem I solved with AI
